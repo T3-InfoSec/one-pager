@@ -12,6 +12,14 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
+\newcommand{\faqurl}{https://tr.ee/gwfaq}
+\newcommand{\obsegg}{https://www.linkedin.com/posts/lugano-plan-b_luganoplanb-bitcoin-activity-7167881837728493568-LEZk/}
+\newcommand{\theproblem}{https://x.com/search?q=jameson\%20lopp\%20wrench\%20attack&src=typed_query&f=live}
+\newcommand{\nocurrentsolution}{https://www.youtube.com/watch?v=MsfR6ZIkzPs&t=2734s}
+\newcommand{\kba}{https://en.wikipedia.org/wiki/Knowledge-based_authentication}
+\newcommand{\kprinciple}{https://en.wikipedia.org/wiki/Kerckhoffs's_principle}
+\newcommand{\privsecplaque}{https://duckduckgo.com/?q=prosegur+verisure+\%22warning+sign\%22+facade\&iar=images\&t=brave\&iaf=type\%3Aphoto}
+
 % Colors
 \definecolor{accent}{RGB}{247, 147, 26}
 
@@ -36,9 +44,7 @@
 
 % App Description
 \noindent
-The 2023-2026 Bitcoin cycle has been witnessing a \href{https://x.com/search?q=jameson\%20lopp\%20wrench\%20attack&src=typed_query&f=live}{terrifying rise in number and gravity of \textbf{wrench attakcs}} (theft of crypto assets through robbery or kidnapping), and, \href{https://www.youtube.com/watch?v=MsfR6ZIkzPs&t=2734s}{embarrassingly, crypto community doesn't have a simple, effective and affordable solution for it}. Yet. Meet \textbf{Great Wall}, an innovative self-custody protocol for coercion-resistance. It is \textbf{the only} to combine the following four properties below: 
-
-% cutting-edge application designed to [briefly describe what your app does in one impactful sentence]. It delivers an unparalleled user experience through a suite of innovative features tailored for [your target audience].
+The 2023-2026 Bitcoin cycle has been witnessing a \href{\theproblem}{terrifying rise in number and gravity of \textbf{wrench attakcs}} (theft of crypto assets through robbery or kidnapping), and, \href{\nocurrentsolution}{embarrassingly, crypto community doesn't have a simple, effective and affordable solution for it}. Yet. Meet \textbf{Great Wall}, an innovative self-custody protocol for coercion-resistance. It is \textbf{the only} to combine the following four properties below: 
 
 \vspace{0.3cm}
 
@@ -51,7 +57,7 @@ The 2023-2026 Bitcoin cycle has been witnessing a \href{https://x.com/search?q=j
 \vspace{0.3cm}
 
 \begin{multicols}{2}
-    \feature{1 \href{https://en.wikipedia.org/wiki/Knowledge-based_authentication}{Deviceless / KBA}}{
+    \feature{1 \href{\kba}{Deviceless / KBA}}{
         No gadget, metal plate, vault, physical address, etc (additional points of failure) are necessary for the key derivation. 
     }
 
@@ -59,8 +65,8 @@ The 2023-2026 Bitcoin cycle has been witnessing a \href{https://x.com/search?q=j
         You don't compromise Bitcoin's foundational premise of \textbf{individual} custody.
     }
 
-    \feature{3 \href{https://en.wikipedia.org/wiki/Kerckhoffs's_principle}{Non-Obscurity}}{
-        You don't need to \href{https://www.linkedin.com/posts/lugano-plan-b_luganoplanb-bitcoin-activity-7167881837728493568-LEZk/}{hide in shadows}, nor wish on your lucky start that your secret trick (like decoy wallet) is never learned by the bad guys.
+    \feature{3 \href{\kprinciple}{Non-Obscurity}}{
+        You don't need to \href{\obsegg}{hide in shadows}, nor wish on your lucky start that your secret trick (like decoy wallet) is never learned by the bad guys.
     }
 
     \feature{4 Coercion-Resistance}{
@@ -84,44 +90,34 @@ Simply put: ``1) It's all in your brain; 2) in nobody else's; 3) attacker knows 
 % Visual / Screenshot (optional)
 \begin{center}
     \includegraphics[width=1\textwidth]{gw-one-pager-diagram.png}
-%     \par\vspace{0.2cm}
     \textit{Comparative BPMN diagrams representing BIP39 and Great Wall key derivation schemes.}
 \end{center}
-
-% \vspace{0.5cm}
 
 \noindent
 Likewise BIP39, it's just a key derivation scheme that can run 100\% offline in any device. The simple way to describe the Great Wall protocol is to say:
 
 \begin{enumerate}
- \item You input an initial seed equivalent in strength to 6 BIP39 words into an \href{https://tr.ee/AakqlgRNiZ}{hours-long hash};
+ \item You input an initial seed equivalent in strength to 6 BIP39 words into an \href{\faqurl}{hours-long hash};
  \item Hash specifies a seed to your `private game', which admits a near-infinity of possible `gameplays';
  \item Bits of your `private gameplay' of your `private game' are added to entropy of master secret;
 \end{enumerate}
 
 \noindent
-The catch is that the knowledge of `gameplay' is easy to memorize but impossible to put into words.
-%, namley, it's \textbf{\href{https://en.wikipedia.org/wiki/Tacit_knowledge}{tacit knowldge}} (hence TKBA). 
-Because of that, you, alive and well, are strictly throughout the entire process, \href{https://tr.ee/AakqlgRNiZ}{which can be set up to take hours, days, or even weeks}.
-%of nonparalelizable, memory-hard computation. 
-As a result, stealing your stash becomes at least as difficult as conducting a kidnapping that takes as long. %this hours, days or weeks period.
-Similarly to \href{https://apps.ankiweb.net/}{Anki} and \href{https://www.duolingo.com/}{Duolingo}, an \textbf{integrated memory coach} prevents user \textit{forgetting} their seeds due to \textit{insufficiently} exercising brain memory of them; but also user \textit{fatigue} due to \textit{overdoing} it. Replaying this half minute game-like UX on average once a week comfortably cements your lifelong coercion-resistant access to your stash.
-% Features Section
+The catch is that the knowledge of `gameplay' is easy to memorize but impossible to put into words. Because of that, you, alive and well, are strictly throughout the entire process, \href{\faqurl}{which can be set up to take hours, days, or even weeks}. As a result, stealing your stash becomes at least as difficult as conducting a kidnapping that takes as long. Similarly to \href{https://apps.ankiweb.net/}{Anki} and \href{https://www.duolingo.com/}{Duolingo}, an \textbf{integrated memory coach} prevents user \textit{forgetting} their seeds due to \textit{insufficiently} exercising brain memory of them; but also user \textit{fatigue} due to \textit{overdoing} it. Replaying this half minute game-like UX on average once a week comfortably cements your lifelong coercion-resistant access to your stash.
 
 \vspace{0.3cm}
 
 {\color{accent}\hrule}
 \vspace{0.2cm}
-{\Large\textbf{Monetization} --- \href{https://tr.ee/AakqlgRNiZ}{first-mover lock-in}}
+{\Large\textbf{Monetization} --- \href{\faqurl}{first-mover lock-in}}
 \vspace{0.2cm}
 {\color{accent}\hrule}
 \vspace{0.3cm}
 
 % The following are revenue streams with first-mover advantage and natural market consolidation:
 \begin{enumerate}
- \item \textbf{branded merchandise} --- likewise \href{https://duckduckgo.com/?q=prosegur+verisure+\%22warning+sign\%22+facade\&iar=images\&t=brave\&iaf=type\%3Aphoto}{security companies warning signs}, it dissuades would-be wrench attackers and propagate virally;
- \item \textbf{convenience} --- for a small price, \href{https://tr.ee/AakqlgRNiZ}{without compromise of security properties}, you can choose to outsource the hours-, days- or weeks-long inconvenience of keeping your own device very busy;
-%  to an anonymous computation provider: User can choose to pay to outsource choose to encrypt game seed with one-time keys that also take a long time to derive. For an affordable (and recurring) payment, they can, without loss of properties, outsource the derivation of these one-time keys, and use them to decrypt game seed. That affords user better economy of scale and relieves the burden of keeping their device busy for long hours.
+ \item \textbf{branded merchandise} --- likewise \href{\privsecplaque}{security companies warning signs}, it dissuades would-be wrench attackers and propagate virally;
+ \item \textbf{convenience} --- for a small price, \href{\faqurl}{without compromise of security properties}, you can choose to outsource the hours-, days- or weeks-long inconvenience of keeping your own device very busy;
  \item \textbf{hardware} --- for premium UX, high-end users will prefer dedicated air gapped hardware;
  \item \textbf{inheritance protocol} --- same market and similar mechanism of 2, also recurrent micropayment;
 \end{enumerate}
