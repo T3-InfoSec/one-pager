@@ -1,0 +1,142 @@
+\documentclass[8pt]{article}
+
+% Packages
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\newcommand{\faqurl}{https://tr.ee/gwfaq}
+\newcommand{\obsegg}{https://www.linkedin.com/posts/lugano-plan-b_luganoplanb-bitcoin-activity-7167881837728493568-LEZk/}
+\newcommand{\theproblem}{https://x.com/search?q=jameson\%20lopp\%20wrench\%20attack&src=typed_query&f=live}
+\newcommand{\nocurrentsolution}{https://www.youtube.com/watch?v=MsfR6ZIkzPs&t=2734s}
+\newcommand{\kba}{https://en.wikipedia.org/wiki/Knowledge-based_authentication}
+\newcommand{\kprinciple}{https://en.wikipedia.org/wiki/Kerckhoffs's_principle}
+\newcommand{\privsecplaque}{https://duckduckgo.com/?q=prosegur+verisure+\%22warning+sign\%22+facade\&iar=images\&t=brave\&iaf=type\%3Aphoto}
+
+% Colors
+\definecolor{accent}{RGB}{247, 147, 26}
+
+% Custom Commands
+\newcommand{\feature}[2]{
+    \noindent\textbf{\large #1}\par
+    \vspace{2pt}
+    #2
+    \vspace{11pt}
+}
+
+% Document
+\begin{document}
+\pagestyle{empty}
+
+% Title Section
+\begin{center}
+  \vspace*{-1cm}
+  {\huge\bfseries\color{accent} Stop Hiding. Start Declaring.}\\[0.6ex]
+  {\large\itshape The \$5 Wrench Attack is Now Neutralized. We Are Building the 'Loud, Proud, and Free' Movement for Self-Custody.}
+\end{center}
+
+\vspace{0.4cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Visceral Problem: The Culture of Fear}}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent Self-custody today presents a false and dangerous choice:
+\begin{itemize}
+  \item \textbf{Exchanges (Coinbase, Binance):} Convenience, but you give up your keys. ``Not your keys, not your coins.''
+  \item \textbf{Hardware Wallets (Ledger, Trezor):} True self-custody, but you become a target. These are \emph{completely vulnerable to a wrench attack}.
+\end{itemize}
+This has created a culture of fear that forces sovereign individuals to hide in the shadows.
+
+\vspace{0.4cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Anti-Fragile Solution: Security Through Anti-Obscurity}}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent Our solution is \textbf{TKBA (Tacit Knowledge-Based Authentication)}: your mind is the only key. It requires both time and tacit knowledge, rendering coercion futile. The protocol is \emph{anti-fragile}: unlike obscurity-based security, its deterrence grows as attackers learn how it works. See \href{\faqurl}{our FAQ} for the mechanics.
+
+\vspace{0.4cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Movement: From Fear to ``Loud, Proud, and Free''}}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent Anti-Obscurity flips the paradigm. Instead of hiding, you \emph{want} attackers to know you use Great Wall—an educated attacker understands the attack cannot succeed. Our apparel and stickers function as deterrent yard signs, signaling confident security preparedness and stopping the attack before it begins.
+
+\vspace{0.4cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Business: A Capital-Efficient Marketplace}}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent We monetize TKBA through an Anonymous Computation Marketplace:
+\begin{itemize}
+  \item \textbf{Clients (You):} Pay a recurring subscription to outsource the time-lock computation (from 2 to 168 hours), staying secure and anonymous without tying up your hardware.
+  \item \textbf{Providers:} A network of users monetize idle compute by running these jobs. We take a \textbf{28\%} platform fee.
+\end{itemize}
+
+\vspace{0.2cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Growth Engine}} \hfill {\small 20\% referral (limited-time)}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent Providers are our zero-base-cost sales force. To head start the marketplace, we offer a \textbf{20\% lifetime referral commission} on subscription revenue for clients a Provider recruits, \emph{limited to the period before we reach 20,000 paying customers}. This model projects an exceptional \textbf{\~37:1 LTV:CAC} (CAC $\sim21$).
+
+\vspace{0.4cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{Near-Term Milestones (2025--2026)}}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{MVP Ready:} Nov 30, 2025
+  \item \textbf{First 10 Beta Clients:} Dec 10, 2025
+  \item \textbf{End of Beta (50 Clients):} Feb 2026
+  \item \textbf{1,000 Customers:} Jun 2026
+\end{itemize}
+
+\vspace{0.2cm}
+
+{\color{accent}\hrule}
+\vspace{0.2cm}
+{\Large\textbf{The Ask}} \hfill {\small Seed round}
+\vspace{0.2cm}
+{\color{accent}\hrule}
+\vspace{0.3cm}
+
+\noindent We are seeking a \textbf{\$600K} seed round to launch the platform, acquire our first 1,000 customers, and scale toward a \textbf{\$20M} valuation.
+
+\vspace{0.4cm}
+{\color{accent}\rule{\linewidth}{0.5mm}}
+\begin{center}
+Read our \href{\faqurl}{FAQ} to learn how TKBA works, or our Executive Summary (\href{https://tr.ee/gwxs}{tr.ee/gwxs}) to see the economics.
+\end{center}
+
+\end{document}
